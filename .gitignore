@@ -1,0 +1,30 @@
+# Fichiers sensibles
+.env
+*.key
+*.pem
+
+#  Résultats générés
+*.json
+*.log
+outputs/
+llava/output.json
+donut/output.json
+textract_claude/result_claude.json
+
+#  Fichiers Python temporaires
+__pycache__/
+*.pyc
+*.pyo
+
+# Environnement virtuel
+.venv/
+env/
+venv/
+
+#  Notebooks
+*.ipynb_checkpoints/
+
+# VSCode / IDE
+.vscode/
+.idea/
+.DS_Store
