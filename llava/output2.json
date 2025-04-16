@@ -1,0 +1,127 @@
+{
+ "visits": [
+   {
+     "id": 1,
+     "code": "V1",
+     "description": "Eligibility assessment and consent signature",
+     "order": 1,
+     "is\_scheduled": true,
+     "anchor": null,
+     "expected\_days": null,
+     "window\_before": null,
+     "window\_after": null
+   },
+   {
+     "id": 2,
+     "code": "V2",
+     "description": "Baseline visit",
+     "order": 2,
+     "is\_scheduled": true,
+     "anchor": null,
+     "expected\_days": null,
+     "window\_before": null,
+     "window\_after": null
+   },
+   {
+     "id": 3,
+     "code": "V3",
+     "description": "Week 1 visit",
+     "order": 3,
+     "is\_scheduled": true,
+     "anchor": 2,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 4,
+     "code": "V4",
+     "description": "Week 2 visit",
+     "order": 4,
+     "is\_scheduled": true,
+     "anchor": 3,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 5,
+     "code": "V5",
+     "description": "Week 4 visit",
+     "order": 5,
+     "is\_scheduled": true,
+     "anchor": 4,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 6,
+     "code": "V6",
+     "description": "Week 6 visit",
+     "order": 6,
+     "is\_scheduled": true,
+     "anchor": 5,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 7,
+     "code": "V7",
+     "description": "Week 8 visit",
+     "order": 7,
+     "is\_scheduled": true,
+     "anchor": 6,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 8,
+     "code": "V8",
+     "description": "Week 12 visit",
+     "order": 8,
+     "is\_scheduled": true,
+     "anchor": 7,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 9,
+     "code": "V9",
+     "description": "Week 16 visit",
+     "order": 9,
+     "is\_scheduled": true,
+     "anchor": 8,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 10,
+     "code": "V10",
+     "description": "Week 24 visit",
+     "order": 10,
+     "is\_scheduled": true,
+     "anchor": 9,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 11,
+     "code": "V11",
+     "description": "Week 32 visit",
+     "order": 11,
+     "is\_scheduled": true,
+     "anchor": 10,
+     "expected\_days": 7,
+     "window\_before": 7,
+     "window\_after": 0
+   },
+   {
+     "id": 12,
+     "code": "V12",
+     "description": "Week 48

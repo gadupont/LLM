@@ -4,7 +4,7 @@
 *.pem
 
 #  Résultats générés
-*.json
+
 *.log
 outputs/
 llava/output.json

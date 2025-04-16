@@ -1,0 +1,27 @@
+
+v1 
+
+
+# === 2. DÉFINITION DU PROMPT STRUCTURÉ POUR LE FORMAT DE VISITE CLINIQUE ===
+prompt = (
+    "Voici un tableau extrait d’un protocole clinique. Extrait et convertis les données en un objet JSON "
+    "structuré représentant les visites de l'étude. Chaque entrée du tableau doit être convertie dans ce format :\n\n"
+    "{\n"
+    "  \"id\": <numéro entier unique et incrémenté à partir de 1>,\n"
+    "  \"code\": <nom de la visite comme D1, D8, Screening, etc>,\n"
+    "  \"description\": <texte court résumant la visite avec le jour et sa tolérance>,\n"
+    "  \"order\": <même valeur que id>,\n"
+    "  \"is_scheduled\": true si elle est planifiée, false si non,\n"
+    "  \"anchor\": null si c'est la première visite (Screening), sinon l'id de la visite de référence,\n"
+    "  \"expected_days\": <nombre de jours depuis la visite Screening>,\n"
+    "  \"window_before\": <jours avant>,\n"
+    "  \"window_after\": <jours après>\n"
+    "}\n\n"
+    "Toutes les visites doivent être listées dans une seule clé 'visits'.\n"
+    "Réponds uniquement avec un objet JSON valide, sans aucun texte explicatif ou commentaire.\n"
+)
+
+
+
+
+

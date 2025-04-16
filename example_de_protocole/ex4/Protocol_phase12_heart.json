@@ -1,0 +1,120 @@
+{
+  "visits": [
+    {
+      "id": 1,
+      "code": "Screening",
+      "description": "Screening visit (≤ 28 days before infusion)",
+      "order": 1,
+      "is_scheduled": true,
+      "anchor": null,
+      "expected_days": null,
+      "window_before": null,
+      "window_after": null
+    },
+    {
+      "id": 2,
+      "code": "Pre-Infusion",
+      "description": "Day 0 Pre-infusion visit",
+      "order": 2,
+      "is_scheduled": true,
+      "anchor": 1,
+      "expected_days": 28,
+      "window_before": 28,
+      "window_after": 0
+    },
+    {
+      "id": 3,
+      "code": "Infusion",
+      "description": "Day 0 Infusion visit",
+      "order": 3,
+      "is_scheduled": true,
+      "anchor": 2,
+      "expected_days": 0,
+      "window_before": 0,
+      "window_after": 0
+    },
+    {
+      "id": 4,
+      "code": "2 Weeks Post-Infusion",
+      "description": "Day 14 ±3 days",
+      "order": 4,
+      "is_scheduled": true,
+      "anchor": 3,
+      "expected_days": 14,
+      "window_before": 3,
+      "window_after": 3
+    },
+    {
+      "id": 5,
+      "code": "1 Month Post-Infusion",
+      "description": "Day 30 ±3 days",
+      "order": 5,
+      "is_scheduled": true,
+      "anchor": 3,
+      "expected_days": 30,
+      "window_before": 3,
+      "window_after": 3
+    },
+    {
+      "id": 6,
+      "code": "2 Months Post-Infusion (Phase 1 only)",
+      "description": "Day 60 ±6 days (Phase 1 subjects only)",
+      "order": 6,
+      "is_scheduled": true,
+      "anchor": 3,
+      "expected_days": 60,
+      "window_before": 6,
+      "window_after": 6
+    },
+    {
+      "id": 7,
+      "code": "3 Months Post-Infusion",
+      "description": "Day 90 ±6 days",
+      "order": 7,
+      "is_scheduled": true,
+      "anchor": 3,
+      "expected_days": 90,
+      "window_before": 6,
+      "window_after": 6
+    },
+    {
+      "id": 8,
+      "code": "6 Months Post-Infusion",
+      "description": "Day 180 ±6 days",
+      "order": 8,
+      "is_scheduled": true,
+      "anchor": 3,
+      "expected_days": 180,
+      "window_before": 6,
+      "window_after": 6
+    },
+    {
+      "id": 9,
+      "code": "12 Months Post-Infusion or ET",
+      "description": "Day 360 ±6 days or Early Termination",
+      "order": 9,
+      "is_scheduled": true,
+      "anchor": 3,
+      "expected_days": 360,
+      "window_before": 6,
+      "window_after": 6
+    },
+    {
+      "id": 10,
+      "code": "Long-Term Follow-Up",
+      "description": "24, 36, 48, 60-Month Annual Follow-Up ±2 weeks",
+      "order": 10,
+      "is_scheduled": true,
+      "anchor": 3,
+      "expected_days": null,
+      "window_before": null,
+      "window_after": null
+    }
+  ],
+  "dispensing_units": [
+    {
+      "code": "CAP_1002",
+      "description": "CAP-1002 Allogeneic Cardiosphere-Derived Cells"
+    }
+  ]
+}
