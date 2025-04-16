@@ -6,25 +6,6 @@ from dotenv import load_dotenv
 
 
 
-# === 1. FONCTION POUR UPLOADER L’IMAGE LOCALE SUR FILE.IO ===
-def upload_image_to_fileio(image_path):
-    with open(image_path, "rb") as file:
-        response = requests.post("https://file.io", files={"file": file})
-        
-        try:
-            data = response.json()
-        except Exception as e:
-            print("❌ Erreur de décodage JSON :", e)
-            print("🔍 Contenu brut de la réponse :", response.text)
-            raise
-
-        if response.status_code == 200 and data.get("success"):
-            return data["link"]
-        else:
-            print("❌ Upload échoué. Détails :", data)
-            raise Exception("Upload échoué.")
-
-
 # === 2. DÉFINITION DU PROMPT STRUCTURÉ POUR LE FORMAT DE VISITE CLINIQUE ===
 prompt = (
     "Voici un tableau extrait d’un protocole clinique. Extrait et convertis les données en un objet JSON "
@@ -45,12 +26,9 @@ prompt = (
 )
 
 # === 3. IMAGE À TRAITER ===
-image_path = "./example_de_protocole/ex1/schedule.png"
+image_url = "https://raw.githubusercontent.com/gadupont/LLM/094bbfb70cb3e9130c0a16bb4d45a57ecffd84b5/example_de_protocole/ex1/schedule.png"
 
-# Upload de l’image localement
-print("📤 Upload de l’image en cours...")
-image_url = upload_image_to_fileio(image_path)
-print(f"✅ Image uploadée : {image_url}")
+
 
 # === 4. APPEL À LLAVA VIA REPLICATE ===
 print("🤖 Envoi de la requête à LLaVA...")
